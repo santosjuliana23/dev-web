@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tinta&Papel</title>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fanwood+Text&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="img"></div>
+    </div>
+    <nav class="navbar">
+      <div class="menu-toggle" id="mobile-menu">
+        <i class='bx bx-menu' id="menu-icon"></i>
+      </div>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="index.html">Página Inicial</a></li>
+        <li><a href="5maiores.html">Escritores</a></li>
+        <li><a href="filmes.html">Filmes</a></li>
+        <li><a href="pagina3.html">Resenhas</a></li>
+      </ul>
+    </nav>
+  </header>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1>Livros que irão virar filmes.</h1>
+  <div class="row">
+    <div class="card um">
+      <h2>Através de Você</h2>
+      <p>Depois de “Através da Minha Janela”, a Netflix investe na continuaçao. A expectativa é que o segundo filme
+        adapte o segundo livro da trilogia “Os Irmãos Hidalgo” da escritora venezuelana Ariana Godoy. O foco sai de Ares
+        Hidalgo e Raquel e passa para Ártemis Hidalgo, o irmão mais velho.</p>
+      <img class="image" src="imgs/atravesdevoce.jpg" alt="money" />
+    </div>
+
+    <div class="card dois">
+      <h2>Um Ano Inesquecível</h2>
+      <p>O Amazon Studios adquiriu os direitos do livro “Um Ano Inesquecível”, que reúne quatro contos, cada um assinado
+        por uma escritora para uma estação do ano: Paula Pimenta (inverno), Babi Dewet (outono), Bruna Vieira
+        (primavera) e Thalita Rebouças (verão). Um deles é dirigido por Lázaro Ramos e tem participações de IZA e Lulu
+        Santos.</p>
+      <img class="image" src="imgs/um-ano-inesquecivel-verao-outono-trailer-data.png" alt="settings" />
+    </div>
+
+    <div class="card tres">
+      <h2>Daisy Jones & The Six</h2>
+      <p>O Prime Video já gravou uma série inteira baseada no livro “Daisy Jones & The Six”, de Taylor Jenkins Reid, que
+        conta a história de uma banda fictícia. A produtora de Reese Witherspoon tocou o projeto para o serviço de
+        streaming. O elenco será encabeçado por Riley Keough como a cantora Daisy Jones e Sam Claflin como o líder Billy
+        Dunne.</p>
+      <img class="image" src="imgs/daisy.jpg" alt="article" />
+    </div>
+  </div>
+</body>
+<script>
+  const mobileMenu = document.getElementById('mobile-menu');
+  const navList = document.getElementById('nav-list');
+
+  mobileMenu.addEventListener('click', () => {
+    navList.classList.toggle('active');
+  });
+</script>
+</html>

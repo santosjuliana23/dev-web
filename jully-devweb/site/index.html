@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinta&Papel</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fanwood+Text&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="img"></div>
+        </div>
+        <nav class="navbar">
+            <div class="menu-toggle" id="mobile-menu">
+                <i class='bx bx-menu' id="menu-icon"></i>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="5maiores.html">Escritores</a></li>
+                <li><a href="filmes.html">Filmes</a></li>
+                <li><a href="pagina3.html">Resenhas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="parallax">
+        <h1>
+            <main>
+                <section class="module parallax parallax-1">
+                    <h1></h1>
+                </section>
+
+                <section class="module content">
+                    <div class="container1">
+
+                        <p>
+                        <p>Explore o fascinante mundo da literatura e fique por dentro das últimas notícias e novidades
+                            no nosso site dedicado a livros e cultura literária.</p>
+                        </p>
+                </section>
+
+                <section class="module parallax parallax-2">
+                    <h1></h1>
+                    <p>A leitura desempenha um papel fundamental em nossas vidas, pois é uma fonte inesgotável de
+                        conhecimento, aprendizado e crescimento pessoal. Através dos livros, podemos explorar novos
+                        mundos, viajar para lugares distantes, conhecer culturas diversas e vivenciar experiências que
+                        vão além das nossas próprias vivências.</p>
+                </section>
+                <section class="module content">
+                    <div class="container2">
+                        <p>O site Tinta&Papel é um site de notícias sobre o mundo da leitura e resenhas de livros.
+                            Fique a vontade.
+                        </p>
+
+                </section>
+            </main>
+        </h1>
+    </div>
+</body>
+
+<script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navList = document.getElementById('nav-list');
+
+    mobileMenu.addEventListener('click', () => {
+        navList.classList.toggle('active');
+    });
+</script>
+
+</html>

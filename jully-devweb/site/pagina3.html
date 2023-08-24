@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tinta&Papel</title>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fanwood+Text&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="img"></div>
+    </div>
+    <nav class="navbar">
+      <div class="menu-toggle" id="mobile-menu">
+        <i class='bx bx-menu' id="menu-icon"></i>
+      </div>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="index.html">Página Inicial</a></li>
+        <li><a href="5maiores.html">Escritores</a></li>
+        <li><a href="filmes.html">Filmes</a></li>
+        <li><a href="pagina3.html">Resenhas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="row1">
+    <div class="blog-post1 card">
+      <div class="blog-post-img">
+        <img src="imgs/alicep.jpg" alt="Imagem do post 1">
+      </div>
+      <div class="blog-post-data">
+        <span>Terça-feira</span>
+        <span>13 de agosto de 2023.</span>
+      </div>
+      <h2 class="blog-post-title">Alice No País das Maravilhas</h2>
+      <p class="blog-post-texto">
+        "Alice no País das Maravilhas", obra clássica de Lewis Carroll, mergulha os leitores em um universo de
+        maravilhas e absurdos, onde a realidade é distorcida e a imaginação corre solta.
+        <span class="full-text hidden">
+          "Alice no País das Maravilhas", escrito por Lewis Carroll, é um conto de fantasia que narra as aventuras
+          surreais da jovem Alice após cair em um buraco de coelho. Ela entra em um mundo de maravilhas e absurdos,
+          onde
+          encontra personagens excêntricos como o Chapeleiro Maluco, a Lagarta, o Gato de Cheshire e a Rainha de
+          Copas.
+          Enfrentando desafios ilógicos e mudanças de tamanho imprevisíveis, a narrativa explora a natureza da
+          identidade, crescimento e lógica, ao mesmo tempo em que critica as normas sociais da época. O livro continua
+          a
+          encantar leitores de todas as idades com sua imaginação desenfreada e crítica sutil.</span>
+      </p>
+      <a href="#" class="blog-post-cta leia-mais">Leia Mais</a>
+
+    </div>
+
+    <div class="blog-post1 card">
+      <div class="blog-post-img">
+        <img src="imgs/anneof.jpg" alt="Imagem do post 1">
+      </div>
+      <div class="blog-post-data">
+        <span>Terça-feira</span>
+        <span>13 de agosto de 2023.</span>
+      </div>
+      <h2 class="blog-post-title">Anne of Green Gables</h2>
+      <p class="blog-post-texto">
+        "Anne of Green Gables", escrito por Lucy Maud Montgomery, nos transporta para um mundo pitoresco de Avonlea,
+        onde a vida da órfã Anne Shirley toma vida.
+        <span class="full-text hidden">
+          "Anne of Green Gables" é uma narrativa de Lucy Maud Montgomery que nos introduz à órfã Anne Shirley. Enviada
+          por engano para viver com os irmãos Cuthbert em Green Gables, Anne traz uma alegria contagiante à serena
+          Avonlea. Com sua imaginação vívida e personalidade cativante, Anne conquista os corações das pessoas ao seu
+          redor, enquanto enfrenta desafios, faz amizades e floresce em um mundo que inicialmente a desconcerta.
+          Através
+          dessa encantadora história, Montgomery explora temas de autodescoberta, amizade e o poder transformador do
+          amor e da aceitação.</span>
+      </p>
+      <a href="#" class="blog-post-cta leia-mais">Leia Mais</a>
+
+    </div>
+
+    <div class="blog-post1 card">
+      <div class="blog-post-img">
+        <img src="imgs/o_magico_de_oz_9788525411297_hd.jpg" alt="Imagem do post 1">
+      </div>
+      <div class="blog-post-data">
+        <span>Terça-feira</span>
+        <span>13 de agosto de 2023.</span>
+      </div>
+      <h2 class="blog-post-title">O Mágico de Oz</h2>
+      <p class="blog-post-texto">
+        "O Mágico de Oz", escrito por L. Frank Baum, é um conto mágico que nos leva a uma jornada encantadora.
+        <span class="full-text hidden">
+          "O Mágico de Oz", escrito por L. Frank Baum, segue a jornada de Dorothy Gale, uma jovem transportada por um
+          ciclone para a mágica Terra de Oz. Companheira de um Espantalho, Homem de Lata e Leão Covarde, eles embarcam
+          em
+          uma busca pela Cidade das Esmeraldas para encontrar o Mágico de Oz, cada um buscando algo que acredita lhes
+          faltar - um cérebro, um coração, coragem e um caminho de volta para casa. A narrativa cativante explora
+          temas de
+          amizade, autodescoberta e superação de obstáculos, enquanto os personagens enfrentam desafios encantadores
+          em
+          uma terra de maravilhas e perigos.</span>
+      </p>
+      <a href="#" class="blog-post-cta leia-mais">Leia Mais</a>
+    </div>
+  </div>
+</body>
+
+  <script>
+    const leiaMaisBtns = document.querySelectorAll(".leia-mais");
+
+    leiaMaisBtns.forEach((btn) => {
+      btn.addEventListener("click", (event) => {
+        event.preventDefault();
+        const fullText = event.target.parentElement.querySelector(".full-text");
+        fullText.classList.toggle("hidden");
+        if (fullText.classList.contains("hidden")) {
+          event.target.textContent = "Leia Mais";
+        } else {
+          event.target.textContent = "Mostrar Menos";
+        }
+      });
+    });
+
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navList = document.getElementById('nav-list');
+
+    mobileMenu.addEventListener('click', () => {
+        navList.classList.toggle('active');
+    });
+  </script>
+
+</html>
